@@ -12,9 +12,9 @@
 ##########################################################
 
 
+import os
 import random
 import re
-import os
 import sys
 from random import randint
 
@@ -37,7 +37,7 @@ if __name__ == '__main__':
         cfg_file_out = output_folder + '/exp' + str(i) + '.cfg'
 
         with open(cfg_file_out, 'wt') as cfg_out, \
-             open(cfg_file, 'rt') as cfg_in:
+                open(cfg_file, 'rt') as cfg_in:
             for line in cfg_in:
 
                 key = line.split('=')[0]
