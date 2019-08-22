@@ -510,7 +510,7 @@ def run_nn(data_name, data_set, data_end_index, fea_dict, lab_dict, arch_dict, c
             inp = inp.cuda()
 
         if to_do == 'train':
-            # Change inp to perform Gaussian noise
+            # Change inp to perform Gaussian noise =======================================
             # Forward input, with autograd graph active
             outs_dict = forward_model(fea_dict, lab_dict, arch_dict, model, nns, costs, inp, inp_out_dict, max_len,
                                       batch_size, to_do, forward_outs)

@@ -30,7 +30,7 @@ parser.add_option('--splice-step', dest='splice_step',
                   default='1')
 (options, args) = parser.parse_args()
 
-if (options.dim_in == None):
+if options.dim_in is None:
     parser.print_help()
     sys.exit(1)
 

@@ -27,7 +27,7 @@ parser.add_option('--fea-dim', dest='dim', help='feature dimension')
 parser.add_option('--splice', dest='splice', help='applied splice value')
 (options, args) = parser.parse_args()
 
-if (options.dim == None):
+if options.dim is None:
     parser.print_help()
     sys.exit(1)
 

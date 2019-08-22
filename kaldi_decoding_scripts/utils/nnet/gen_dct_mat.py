@@ -30,7 +30,7 @@ parser.add_option('--splice', dest='splice', help='applied splice value')
 parser.add_option('--dct-basis', dest='dct_basis', help='number of DCT basis')
 (options, args) = parser.parse_args()
 
-if (options.dim == None):
+if options.dim is None:
     parser.print_help()
     sys.exit(1)
 
